@@ -13,6 +13,10 @@ type Accept struct {
 	raw *vocab.Accept
 }
 
+func NewAccept() *Accept {
+	return &Accept{raw: &vocab.Accept{}}
+}
+
 // Raw returns the vocab type for manaual manipulation. Note that manipulating the underlying type to be in an inconsistent state may cause this convenience type's methods to later fail.
 func (t *Accept) Raw() (n *vocab.Accept) {
 	return t.raw

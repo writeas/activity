@@ -13,6 +13,10 @@ type Announce struct {
 	raw *vocab.Announce
 }
 
+func NewAnnounce() *Announce {
+	return &Announce{raw: &vocab.Announce{}}
+}
+
 // Raw returns the vocab type for manaual manipulation. Note that manipulating the underlying type to be in an inconsistent state may cause this convenience type's methods to later fail.
 func (t *Announce) Raw() (n *vocab.Announce) {
 	return t.raw
