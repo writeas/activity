@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/go-fed/activity/tools/defs"
-	"github.com/go-fed/activity/tools/streams/gen"
 	"io/ioutil"
+
+	"github.com/writeas/activity/tools/defs"
+	"github.com/writeas/activity/tools/streams/gen"
 )
 
 func main() {

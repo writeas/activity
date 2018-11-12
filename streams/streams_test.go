@@ -1,10 +1,10 @@
-//go:generate go install github.com/go-fed/activity/tools/streams
+//go:generate go install github.com/writeas/activity/tools/streams
 //go:generate streams
 package streams
 
 import (
 	"encoding/json"
-	"github.com/go-fed/activity/vocab"
+	"github.com/writeas/activity/vocab"
 	"github.com/go-test/deep"
 	"net/url"
 	"testing"

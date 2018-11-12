@@ -1,4 +1,4 @@
-//go:generate go install github.com/go-fed/activity/tools/vocab
+//go:generate go install github.com/writeas/activity/tools/vocab
 //go:generate vocab
 package vocab
 

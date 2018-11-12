@@ -2,9 +2,10 @@ package pub
 
 import (
 	"fmt"
-	"github.com/go-fed/activity/streams"
-	"github.com/go-fed/activity/vocab"
 	"net/url"
+
+	"github.com/writeas/activity/streams"
+	"github.com/writeas/activity/vocab"
 )
 
 // ToPubObject transforms a json-deserialized ActivityStream object into a

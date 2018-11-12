@@ -3,7 +3,7 @@ package gen
 import (
 	"bytes"
 	"fmt"
-	"github.com/go-fed/activity/tools/defs"
+	"github.com/writeas/activity/tools/defs"
 )
 
 func generateDefinitions(t *defs.Type, m map[*defs.PropertyType]*intermedDef) (fd []*defs.FunctionDef, sd []*defs.StructDef, x []*defs.InterfaceDef, imports map[string]bool) {
