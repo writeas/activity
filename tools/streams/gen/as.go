@@ -5,8 +5,8 @@ package gen
 import (
 	"bytes"
 	"fmt"
-	"github.com/go-fed/activity/tools/defs"
-	"github.com/go-fed/activity/tools/vocab/gen"
+	"github.com/writeas/activity/tools/defs"
+	"github.com/writeas/activity/tools/vocab/gen"
 	"go/format"
 	"strings"
 )
@@ -43,7 +43,7 @@ func GenerateConvenienceTypes(types []*defs.Type) (f []*File, err error) {
 			Name: "streams",
 		}
 		funcs, defs, imports := generateDefinitions(t)
-		imports["github.com/go-fed/activity/vocab"] = true
+		imports["github.com/writeas/activity/vocab"] = true
 		for i, _ := range imports {
 			p.Imports = append(p.Imports, i)
 		}
@@ -67,7 +67,7 @@ func generatePackageDefinition() *defs.PackageDef {
 	return &defs.PackageDef{
 		Name:    "streams",
 		Comment: "Package streams is a convenience wrapper around the raw ActivityStream vocabulary. This package is code-generated to permit more powerful expressions and manipulations of the ActivityStreams Vocabulary types. This package also does not permit use of 'unknown' properties, or those that are outside of the ActivityStream Vocabulary specification. However, it still correctly propagates them when repeatedly re-and-de-serialized. Custom extensions of the vocabulary are supported by modifying the data definitions in the generation tool and rerunning it. Do not modify this package directly.",
-		Imports: []string{"fmt", "github.com/go-fed/activity/vocab"},
+		Imports: []string{"fmt", "github.com/writeas/activity/vocab"},
 		Raw: `type Resolution int
 
 const (

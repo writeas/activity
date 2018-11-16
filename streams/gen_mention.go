@@ -2,7 +2,7 @@
 package streams
 
 import (
-	"github.com/go-fed/activity/vocab"
+	"github.com/writeas/activity/vocab"
 	"net/url"
 )
 

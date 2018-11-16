@@ -3,7 +3,7 @@ package deliverer
 import (
 	"context"
 	"fmt"
-	"github.com/go-fed/activity/pub"
+	"github.com/writeas/activity/pub"
 	"golang.org/x/time/rate"
 	"math"
 	"net/url"

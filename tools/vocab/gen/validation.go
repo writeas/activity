@@ -2,7 +2,7 @@ package gen
 
 import (
 	"fmt"
-	"github.com/go-fed/activity/tools/defs"
+	"github.com/writeas/activity/tools/defs"
 	"strings"
 )
 

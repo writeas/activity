@@ -3,7 +3,7 @@ package pub
 import (
 	"context"
 	"crypto"
-	"github.com/go-fed/activity/vocab"
+	"github.com/writeas/activity/vocab"
 	"github.com/go-fed/httpsig"
 	"net/http"
 	"net/http/httptest"

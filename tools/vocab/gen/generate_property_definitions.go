@@ -3,7 +3,7 @@ package gen
 import (
 	"bytes"
 	"fmt"
-	"github.com/go-fed/activity/tools/defs"
+	"github.com/writeas/activity/tools/defs"
 	"strings"
 )
 

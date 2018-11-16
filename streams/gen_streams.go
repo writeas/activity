@@ -3,7 +3,7 @@ package streams
 
 import (
 	"fmt"
-	"github.com/go-fed/activity/vocab"
+	"github.com/writeas/activity/vocab"
 )
 
 type Resolution int
